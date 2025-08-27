@@ -24,8 +24,7 @@ getElement("hotline-number").addEventListener("click", function (e) {
       callBtn.parentNode.parentNode.parentNode.children[2].innerText;
     const callHistory = getElement("call-history");
     const newCallHistory = document.createElement("div");
-    const now = new Date();
-    const formattedTime = now.toLocaleTimeString();
+    const formattedTime = new Date().toLocaleTimeString();
     newCallHistory.innerHTML = `                
     <div class="bg-gray-100 shadow-sm rounded p-1 mb-2">
                     <div class="md:flex justify-between items-center gap-1">
