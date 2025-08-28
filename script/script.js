@@ -27,12 +27,12 @@ getElement("hotline-number").addEventListener("click", function (e) {
     const formattedTime = new Date().toLocaleTimeString();
     newCallHistory.innerHTML = `                
     <div class="bg-gray-100 shadow-sm rounded p-1 mb-2">
-                    <div class="md:flex justify-between items-center gap-1">
-                        <h2 class=" md:font-semibold text-sm md:text-[1rem]">${serviceName}</h2>
-                        <p class="font-thin text-[0.6rem] md:text-[0.8rem]">${formattedTime}</p>
+                    <div class="md:grid grid-cols-5 justify-evenly">
+                        <h2 class="md:col-span-3 md:font-semibold text-xs lg:text-[0.9rem]">${serviceName}</h2>
+                        <p class="md:grid md:justify-end col-span-2 font-thin text-[0.6rem] lg:text-[0.72rem]">${formattedTime}</p>
                     </div>
                     <div>
-                        <h5 class="text-gray-600 text-[0.9rem] font-semibold">${serviceNumber}</h5>
+                        <h5 class="text-gray-900 text-[0.9rem] font-semibold">${serviceNumber}</h5>
                     </div>
                 </div>`;
     if (currentCoin >= 0) {
